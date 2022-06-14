@@ -1,0 +1,67 @@
+<div>
+    <h3>Lista dos Participantes do Sorteio </h3>
+  </div>
+
+  <mat-tab-group>
+
+    <mat-tab label="IDOSOS">
+    
+        <table mat-table #table [dataSource]="idosos" class="mat-elevation-z8">
+
+          <ng-container matColumnDef="cpf">
+            <th mat-header-cell *matHeaderCellDef> CPF </th>
+            <th mat-cell *matCellDef="let idoso"> {{idoso.cpf}} </th>
+          </ng-container>
+
+          <ng-container matColumnDef="nome">
+            <th mat-header-cell *matHeaderCellDef> Nome </th>
+            <th mat-cell *matCellDef="let idoso"> {{idoso.nome}} </th>
+          </ng-container>
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    
+    </mat-tab>
+    
+    <mat-tab label="DEFICIENTE FÍSICO">
+    
+      <table mat-table #table [dataSource]="deficientesFisico" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="cpf">
+          <th mat-header-cell *matHeaderCellDef> CPF </th>
+          <th mat-cell *matCellDef="let deficiente"> {{deficiente.cpf}} </th>
+        </ng-container>
+
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef> Nome </th>
+          <th mat-cell *matCellDef="let deficiente"> {{deficiente.nome}} </th>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    
+    </mat-tab>
+    
+    <mat-tab label="GERAL">
+    
+      <table mat-table #table [dataSource]="gerais" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="cpf">
+          <th mat-header-cell *matHeaderCellDef> CPF </th>
+          <th mat-cell *matCellDef="let geral"> {{geral.cpf}} </th>
+        </ng-container>
+
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef> Nome </th>
+          <th mat-cell *matCellDef="let geral"> {{geral.nome}} </th>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    
+    </mat-tab>
+    
+    </mat-tab-group>

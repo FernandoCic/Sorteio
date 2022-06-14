@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gm6atQ6s0PbSIDI3nzeYWCuoyd2wUiYHeh3XJHj6sZumnHlTXjN83l/v1SQDZelVmLixT82bz7LG2TspTNqOAA==",
+  "dgSpecHash": "5Q/j8iXHgH77iz47KafH3pVs3ILIqSeJ0rSZMyPrBT3tP/nCDCE303H8Ym3ItvKBENKUHxi1OH+vKNqKkiq+aA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio\\Sorteio.API.csproj",
+  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio\\Sorteio.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

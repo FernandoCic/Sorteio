@@ -11,34 +11,38 @@ namespace Sorteio.Controllers
 {
     [Route("api/{controller}")]
     [ApiController]
-    public class ParticipanteController : ControllerBase
+    public class ParticipantesController : ControllerBase
     {
         private readonly IParticipanteService _participanteService;
 
-        public ParticipanteController(IParticipanteService participanteService)
+        public ParticipantesController(IParticipanteService participanteService)
         {
             _participanteService = participanteService;
         }
 
         [HttpGet]
+        [Route("obterIdosos")]
         public ActionResult<IEnumerable<Participante>> GetIdosos()
         {
             return Ok(_participanteService.ObterIdososVálidos());
         }
 
         [HttpGet]
+        [Route("obterDeficientesFisico")]
         public ActionResult<IEnumerable<Participante>> GetDeficienteFisicos()
         {
             return Ok(_participanteService.ObterDeficienteFisicosValidos());
         }
 
         [HttpGet]
+        [Route("obterGerais")]
         public ActionResult<IEnumerable<Participante>> GetGerais()
         {
             return Ok(_participanteService.ObterGeraisValidos());
         }
 
         [HttpGet]
+        [Route("realizarSorteio")]
         public ActionResult<IEnumerable<Participante>> RealizaSorteio()
         {
             return Ok(_participanteService.RealizarSorteio());

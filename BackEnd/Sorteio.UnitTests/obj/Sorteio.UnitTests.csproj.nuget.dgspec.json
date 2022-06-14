@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio.UnitTests\\Sorteio.UnitTests.csproj": {}
+    "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio.UnitTests\\Sorteio.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio.UnitTests\\Sorteio.UnitTests.csproj": {
+    "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio.UnitTests\\Sorteio.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio.UnitTests\\Sorteio.UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio.UnitTests\\Sorteio.UnitTests.csproj",
         "projectName": "Sorteio.UnitTests",
-        "projectPath": "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio.UnitTests\\Sorteio.UnitTests.csproj",
+        "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio.UnitTests\\Sorteio.UnitTests.csproj",
         "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio.UnitTests\\obj\\",
+        "outputPath": "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio\\Sorteio.API.csproj": {
-                "projectPath": "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio\\Sorteio.API.csproj"
+              "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio\\Sorteio.API.csproj": {
+                "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio\\Sorteio.API.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio\\Sorteio.API.csproj": {
+    "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio\\Sorteio.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio\\Sorteio.API.csproj",
+        "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio\\Sorteio.API.csproj",
         "projectName": "Sorteio.API",
-        "projectPath": "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio\\Sorteio.API.csproj",
+        "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio\\Sorteio.API.csproj",
         "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio\\obj\\",
+        "outputPath": "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

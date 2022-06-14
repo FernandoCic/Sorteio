@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7bGrJCJKVO1q1c/cxlF8JqiQOHEBwXndDOX6eBCiEyszjsoQBg4hMiZYOZfpnIueHTGV+0HtQCcAcHeiQhWWvg==",
+  "dgSpecHash": "TUmnIVM42iXoiGitHPsMGMg30zls2a+SOe0A6JEhK8J9FsRyXw6FudeUln9bIz+2w7mMyw5Gv0IWl0lM3FtEYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nando\\source\\repos\\Sorteio\\Sorteio.UnitTests\\Sorteio.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Sorteio\\BackEnd\\Sorteio.UnitTests\\Sorteio.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
