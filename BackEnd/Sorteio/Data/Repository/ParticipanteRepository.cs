@@ -7,8 +7,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
 
 namespace Sorteio.Data.Repository
 {
@@ -28,12 +26,12 @@ namespace Sorteio.Data.Repository
             };
 
             IEnumerable<Participante> participantes;
-            var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
 
-            var pathRoot = Path.GetPathRoot("lista_pessoas.csv");
+            var currentPath = Environment.CurrentDirectory;
 
-            var iconPath = Path.Combine(outPutDirectory, "lista_pessoas.csv");
-            using (var reader = new StreamReader("C:/Users/nando/source/repos/Sorteio/Sorteio/Data/Repository/File/lista_pessoas.csv", System.Text.Encoding.Latin1))
+            var pathRoot = currentPath + "\\Data/Repository/File/lista_pessoas.csv";
+
+            using (var reader = new StreamReader(pathRoot, System.Text.Encoding.Latin1))
             using (var csv = new CsvReader(reader, config))
             {
                 participantes = csv.GetRecords<Participante>().ToList();
