@@ -44,7 +44,6 @@ C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\bin\Debug\net5.0\Microso
 C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\obj\Debug\net5.0\Sorteio.API.csproj.AssemblyReference.cache
 C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\obj\Debug\net5.0\Sorteio.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\obj\Debug\net5.0\Sorteio.API.AssemblyInfoInputs.cache
 C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\obj\Debug\net5.0\Sorteio.API.AssemblyInfo.cs
@@ -60,3 +59,4 @@ C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\obj\Debug\net5.0\Sorteio
 C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\obj\Debug\net5.0\ref\Sorteio.API.dll
 C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\obj\Debug\net5.0\Sorteio.API.pdb
 C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\obj\Debug\net5.0\Sorteio.API.genruntimeconfig.cache
+C:\Users\nando\Documents\GitHub\Sorteio\BackEnd\Sorteio\obj\Debug\net5.0\Sorteio.API.csproj.AssemblyReference.cache

@@ -10,7 +10,7 @@ const routes: Routes = [
     data: { title: 'Lista de participantes' }
   },
   {
-    path: 'participante',
+    path: 'participante-sorteados',
     component: ParticipanteSorteadosComponent,
     data: { title: 'Lista de participantes Sorteados' }
   },

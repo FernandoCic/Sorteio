@@ -1,16 +1,29 @@
+<div class="container h-100">
 <div>
-    <h3>Lista dos Participantes do Sorteio </h3>
+  <h3><b>Sorteio de Habitação</b> </h3>
+</div>
+<div>
+    <h1><b>Lista dos Participantes do Sorteio</b> </h1>
   </div>
-
+  <br>
+  <br>
+  <div class="col-md-6">
+    <p><b>Total de participantes: {{totalParticipantes}}</b></p>
+  </div>
+  <div>
+    <button type="button" class="btn btn-primary" (click)="realizarSorteio()">REALIZAR SORTEIO</button>
+  </div>
+  <br>
+  <br>
   <mat-tab-group>
 
     <mat-tab label="IDOSOS">
     
         <table mat-table #table [dataSource]="idosos" class="mat-elevation-z8">
-
+          
           <ng-container matColumnDef="cpf">
             <th mat-header-cell *matHeaderCellDef> CPF </th>
-            <th mat-cell *matCellDef="let idoso"> {{idoso.cpf}} </th>
+            <th mat-cell *matCellDef="let idoso"> {{idoso.cpfComMascara}} </th>
           </ng-container>
 
           <ng-container matColumnDef="nome">
@@ -27,12 +40,12 @@
     <mat-tab label="DEFICIENTE FÍSICO">
     
       <table mat-table #table [dataSource]="deficientesFisico" class="mat-elevation-z8">
-
+        
         <ng-container matColumnDef="cpf">
           <th mat-header-cell *matHeaderCellDef> CPF </th>
-          <th mat-cell *matCellDef="let deficiente"> {{deficiente.cpf}} </th>
+          <th mat-cell *matCellDef="let deficiente"> {{deficiente.cpfComMascara}} </th>
         </ng-container>
-
+     
         <ng-container matColumnDef="nome">
           <th mat-header-cell *matHeaderCellDef> Nome </th>
           <th mat-cell *matCellDef="let deficiente"> {{deficiente.nome}} </th>
@@ -50,7 +63,7 @@
 
         <ng-container matColumnDef="cpf">
           <th mat-header-cell *matHeaderCellDef> CPF </th>
-          <th mat-cell *matCellDef="let geral"> {{geral.cpf}} </th>
+          <th mat-cell *matCellDef="let geral"> {{geral.cpfComMascara}} </th>
         </ng-container>
 
         <ng-container matColumnDef="nome">
@@ -65,3 +78,4 @@
     </mat-tab>
     
     </mat-tab-group>
+  </div>

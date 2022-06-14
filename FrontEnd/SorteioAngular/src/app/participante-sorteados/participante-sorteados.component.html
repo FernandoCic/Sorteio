@@ -1,0 +1,49 @@
+<div class="container h-100">
+  <div style="text-align: center;">
+    <h3><b>Sorteio de Habitação</b> </h3>
+  </div>
+  <div style="text-align: center;">
+      <h2><b>Ganhadores do Sorteio</b> </h2>
+  </div>
+    <br>
+    <br>
+   <div style="text-align: center;">
+     <h1><b>Parabéns aos Ganhadores</b> </h1>
+   </div>
+
+   <table mat-table #table [dataSource]="idosos" class="mat-elevation-z8">   
+
+    <ng-container matColumnDef="GANHADOR LISTA IDOSO">
+      <th mat-header-cell *matHeaderCellDef style="text-align: center; font-weight: bold;"> GANHADOR LISTA IDOSO </th>
+      <th mat-cell *matCellDef="let idoso" style="text-align: center; color: blue ;"> {{idoso.participanteText}} </th>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+  <br>
+    <br>
+    <table mat-table #table [dataSource]="deficientesFisico" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="GANHADOR LISTA DEFICIENTE FÍSICO">
+          <th mat-header-cell *matHeaderCellDef style="text-align: center; font-weight: bold;"> GANHADOR LISTA DEFICIENTE FÍSICO </th>
+          <th mat-cell *matCellDef="let deficiente" style="text-align: center; color: blue ;"> {{deficiente.participanteText}} </th>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumnsDeficiente"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumnsDeficiente;"></tr>
+      </table>
+      <br>
+    <br>
+      <table mat-table #table [dataSource]="gerais" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="GANHADOR LISTA GERAL">
+          <th mat-header-cell *matHeaderCellDef style="text-align: center; font-weight: bold;"> GANHADOR LISTA GERAL </th>
+          <th mat-cell *matCellDef="let geral" style="text-align: center; color: blue ;"> {{geral.participanteText}} </th>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumnsGeral"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumnsGeral;"></tr>
+      </table>
+</div>

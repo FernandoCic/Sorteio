@@ -5,4 +5,6 @@ export class Participante {
     renda: number;
     cota: string;
     cid: string;
+    participanteText: string;
+    cpfComMascara: string;
 }

@@ -24,7 +24,7 @@ namespace Sorteio.Data.Repository
         {
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-                HasHeaderRecord = true,
+                HasHeaderRecord = true
             };
 
             IEnumerable<Participante> participantes;
@@ -33,7 +33,7 @@ namespace Sorteio.Data.Repository
             var pathRoot = Path.GetPathRoot("lista_pessoas.csv");
 
             var iconPath = Path.Combine(outPutDirectory, "lista_pessoas.csv");
-            using (var reader = new StreamReader("C:/Users/nando/source/repos/Sorteio/Sorteio/Data/Repository/File/lista_pessoas.csv"))
+            using (var reader = new StreamReader("C:/Users/nando/source/repos/Sorteio/Sorteio/Data/Repository/File/lista_pessoas.csv", System.Text.Encoding.Latin1))
             using (var csv = new CsvReader(reader, config))
             {
                 participantes = csv.GetRecords<Participante>().ToList();

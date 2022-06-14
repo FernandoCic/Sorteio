@@ -18,6 +18,7 @@ export class ParticipanteComponent implements OnInit {
     idosos: Participante[];
     deficientesFisico: Participante[];
     gerais: Participante[];
+    totalParticipantes: number = 0;
 
     ngOnInit(){
         this.obterParticipantesIdosos();
@@ -29,6 +30,7 @@ export class ParticipanteComponent implements OnInit {
         this.participantesService.obterParticipantesIdosos()
                     .subscribe(res => {
                         this.idosos = res;
+                        this.totalParticipantes = this.totalParticipantes + this.idosos.length;
                     })
     }
 
@@ -36,6 +38,7 @@ export class ParticipanteComponent implements OnInit {
         this.participantesService.obterParticipantesComDeficienciaFisica()
                     .subscribe(res => {
                         this.deficientesFisico = res;
+                        this.totalParticipantes = this.totalParticipantes + this.deficientesFisico.length;
                     })
     }
 
@@ -43,13 +46,11 @@ export class ParticipanteComponent implements OnInit {
         this.participantesService.obterParticipantesGeral()
                     .subscribe(res => {
                         this.gerais = res;
+                        this.totalParticipantes = this.totalParticipantes + this.gerais.length;
                     })
     }
 
-    realizarSorteio(){
-        this.participantesService.realizarSorteio()
-    .subscribe(res => {
-    });
+    realizarSorteio(){      
     this.router.navigate(['/participante-sorteados']);
     }
 }
